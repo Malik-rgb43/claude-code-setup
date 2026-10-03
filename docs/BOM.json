@@ -1,0 +1,431 @@
+{
+  "schema": 1,
+  "tool": "scripts/gen_bom.py",
+  "status": "PASS",
+  "file_count": 41,
+  "total_bytes": 228620,
+  "by_origin": {
+    "owner": 41
+  },
+  "by_licence": {
+    "Apache-2.0": 41
+  },
+  "blocked_count": 0,
+  "unknown_count": 0,
+  "register": {
+    "checked": false,
+    "note": "no --register CSV supplied; reconciliation not run"
+  },
+  "files": [
+    {
+      "path": ".editorconfig",
+      "size": 450,
+      "sha256": "2afbd7e5dc100c5979cb536d4ffa7a6d08bff1a3c6ebeaa8c6d75773f34252bd",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 1,
+      "flags": []
+    },
+    {
+      "path": ".gitattributes",
+      "size": 1250,
+      "sha256": "ba5b69377c7d1d99a3d25ed88ee5e6b329d591a7d0388231f9415d5aac79379a",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 1,
+      "flags": []
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "size": 2269,
+      "sha256": "b6d48607b11359438b22bdcd556d23725a47b02628539551f7ebe910328e17c6",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": ".gitignore",
+      "size": 1342,
+      "sha256": "f1542129b22e210b4aaee6e160082a2d629acdca7c994e1d9e190095b34e4886",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 1,
+      "flags": []
+    },
+    {
+      "path": "AGENTS.md",
+      "size": 2307,
+      "sha256": "870705d5e649af55d1fad59103c38edf67abd31a8e743d98f71b87a11519cc34",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 1,
+      "flags": []
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size": 4105,
+      "sha256": "7f9d4b8d4f411af0ecb81312c1ef0a9f859fe7977fc212191159f32fc29ad38a",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 1,
+      "flags": []
+    },
+    {
+      "path": "CLAUDE.md",
+      "size": 369,
+      "sha256": "9a335ba64b22a3781507c5cbb1412110bfc1340b2297c948704807d94c9cd49c",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 1,
+      "flags": []
+    },
+    {
+      "path": "INSTALL.md",
+      "size": 10109,
+      "sha256": "d3242bd3dd75d74a677e16b8f56ddd29f23a4207be1e000c540b80c0953d42b4",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 1,
+      "flags": []
+    },
+    {
+      "path": "LICENSE",
+      "size": 11560,
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 1,
+      "flags": []
+    },
+    {
+      "path": "NOTICE",
+      "size": 256,
+      "sha256": "a3f7aa37a49fa597f432451dcfc0ebf1de2b108364a51ecc0327cc48f45e19b2",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 1,
+      "flags": []
+    },
+    {
+      "path": "README.md",
+      "size": 2541,
+      "sha256": "b5c4454ee20f2a3bb1366faa66bfd7239cf3a30eb5abb3ad459bd079b6dbd2b0",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 1,
+      "flags": []
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "size": 1731,
+      "sha256": "d836e5e7653c46613361515272ad069b6d4bd44915e6f08cb4ed4b4ac12575a6",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 1,
+      "flags": []
+    },
+    {
+      "path": "docs/decisions/0002-universal-by-default.md",
+      "size": 2888,
+      "sha256": "2f4cd366cfb84780f0285aeb92fd638056fa111f86a95b4f9d0f7d496e449d51",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
+      "path": "docs/decisions/0003-two-repositories.md",
+      "size": 2075,
+      "sha256": "8e9b8d01532e437df702b47cfd68d176b559d3554be627e9ff98999aaf9f2897",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
+      "path": "docs/decisions/0004-public-apache-2.md",
+      "size": 1698,
+      "sha256": "a06f88e1d7d02ea984ee7bf7a4a15a2d6893ec4e728728cf1fe8bd140e6f8c47",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
+      "path": "docs/decisions/0005-repository-split-revised.md",
+      "size": 2718,
+      "sha256": "53839470e7638e6d3c0e566646dd352a69d4bb95bbd25447f2b2f93d7d594634",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
+      "path": "docs/en/credit-saving.md",
+      "size": 2213,
+      "sha256": "af0c1950b1f7ce35f66710ed9af6930f6c609c07837adaeb1d15a0b6659a3f36",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
+      "path": "docs/en/install.md",
+      "size": 4715,
+      "sha256": "1bd00641512e84c6d125099399cede16b3ea070c549225ed0d59281851221068",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
+      "path": "docs/en/troubleshooting.md",
+      "size": 2062,
+      "sha256": "3c066b64d4e87f248943f642d6a9080c05b618d4f4d2b3f63429f7570d8f9d7d",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
+      "path": "docs/en/uninstall.md",
+      "size": 792,
+      "sha256": "e400ef21f013da61557a7da0388607a7620fb3d98f6edbef7087e1516aa74136",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
+      "path": "docs/he/credit-saving.md",
+      "size": 2834,
+      "sha256": "23927b09be444f1dabac9058240cd583ebbfa76a0a09f390732adf7b33babeeb",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
+      "path": "docs/he/install.md",
+      "size": 6052,
+      "sha256": "8f4d4089edeae0b5f4da16ae2e4fef16875f57b225dfce07f4d412cfb6a2626e",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
+      "path": "docs/he/troubleshooting.md",
+      "size": 2460,
+      "sha256": "9dbc8d78317c8ecbbd300cf258426c7a424135bc892dc5b7b6288a7ffe4a7016",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
+      "path": "docs/he/uninstall.md",
+      "size": 936,
+      "sha256": "85a368a503ec592fa9f60c22d41c6aec7ccb48312b5a3d9ba31f846324432e3f",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
+      "path": "install/setup.py",
+      "size": 25103,
+      "sha256": "60b00a332798ed6adc4de31afa292ca12d6991c22ff661c7b64d49035ec1fd75",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": "licenses.toml",
+      "size": 3273,
+      "sha256": "2c707f7851d9c8ef274d22d8103893356140453c78989f512029928174f7bce9",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 1,
+      "flags": []
+    },
+    {
+      "path": "release-manifest.json",
+      "size": 258,
+      "sha256": "4fd8544f20589b8b3ca7402ed06f02ef9f035a48dbfb9c3bbd6d2b5d48dfc8be",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 1,
+      "flags": []
+    },
+    {
+      "path": "scripts/README.md",
+      "size": 6363,
+      "sha256": "6c684c1c9dd5bbfe30f3ff4177834328ca2f5050afb96fd2e9d5503b6453d665",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": "scripts/_avc_common.py",
+      "size": 26416,
+      "sha256": "68e2e28970bd5b67e4b3fb19137dce4858e5e52d761f617ace9c5b716e377c7f",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": "scripts/_avc_fixtures.py",
+      "size": 6953,
+      "sha256": "70610f89bfcc38484d2f74f94694d1c9dcef6241ae05e3b8297dca115345cfb6",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": "scripts/check_links.py",
+      "size": 8621,
+      "sha256": "796041902f0102093143d01537e894ae7f6ba557c1d95b2191c3c5ffd29d70d3",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": "scripts/check_step_ids.py",
+      "size": 6186,
+      "sha256": "5a7c2c2517ea7664c6202dfd7ecd6b332abef162a24713a2d01d7c744c5ed807",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": "scripts/check_workflows.py",
+      "size": 8144,
+      "sha256": "5f609facf3226f1fadebcb6c4ef0d7450d43ad27b340b40727ad8ff964c912ca",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": "scripts/gen_bom.py",
+      "size": 21437,
+      "sha256": "b13ef3baff98bc2c26982def54bcdb9c63af20c96fac11098e1c9be08c5f6a7d",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": "scripts/private_denylist.example.txt",
+      "size": 996,
+      "sha256": "a37d31cdbf19be7f1e2a6a66fa07817cefff2ec5d012e76901b2db455f9199b4",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": "scripts/run_all_checks.py",
+      "size": 10695,
+      "sha256": "69a9690048a7c543f4a569d9707ced484912497123bb66e7774d496afd959bf8",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": "scripts/scan_private.py",
+      "size": 9531,
+      "sha256": "a72b845b0c9bacf7e339f5b27f4aef3452f814ecf66c2c6a7ef51a0bc8759436",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": "scripts/scan_secrets.py",
+      "size": 8373,
+      "sha256": "6733e9f72820bbba3d9a2a0a375397f8097d1d42e775d1ab1b0ab0cda74ff054",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": "scripts/secrets_allowlist.txt",
+      "size": 487,
+      "sha256": "c8eb212114164df465afa060bafe3b963e563216ef6b8a18ef6c87e114706168",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    },
+    {
+      "path": "templates/claude-md/credit-saver.md",
+      "size": 2377,
+      "sha256": "22dc3e0f937fa9cbb863c906982c3b6694d9374e67f13ea8e5ed336fd470e451",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
+      "path": "tests/unit/test_setup.py",
+      "size": 13675,
+      "sha256": "d56a9b3ecfd78d561c977a82973b3fe4bb53c8a375a5a524e7311ec339fc054b",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 2,
+      "flags": []
+    }
+  ]
+}
