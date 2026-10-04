@@ -7,6 +7,11 @@ Releases are immutable: a correction is a new release. Public since 2026-10-03 u
 Dates and facts here are perishable; each entry states its source where it relies on research
 (src: blueprint/REPO_ARCHITECTURE.md section 10, 2026-10-02).
 
+## [Unreleased]
+
+### Added
+- Working defaults: at the start of a task that may need outside tools, Claude Code checks what is connected (MCP servers in its own tool list, command-line tools, API keys by presence only), decides which ones the task should use, says it in one line and continues; it never assumes a connection and asks before anything paid (owner rule 2026-10-05; this repository's rule). 30 lines (limit 40). Docs `defaults-04` (EN/HE) updated.
+
 ## [0.4.0] - 2026-10-04
 
 ### Changed

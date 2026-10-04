@@ -18,7 +18,7 @@ Before saying a task is finished, Claude Code runs the cheapest check that can f
 
 <!-- step: defaults-04 -->
 ## defaults-04 - Cheap tools and cheap proofs
-A command-line tool instead of an extra MCP server when both can do the job; text snapshots instead of screenshots in the browser; the one relevant test instead of the whole suite. (Costs page; best-practices "Use CLI tools".)
+A command-line tool instead of an extra MCP server when both can do the job; text snapshots instead of screenshots in the browser; the one relevant test instead of the whole suite. (Costs page; best-practices "Use CLI tools".) At the start of a task that may need outside tools, Claude Code first checks what is connected - MCP servers, command-line tools and API keys (presence only) - decides which ones the task should use, says it in one line and continues; it never assumes a connection, and anything paid waits for your yes (*this repository's rule*).
 
 <!-- step: defaults-05 -->
 ## defaults-05 - Safe by default (*this repository's rule*) and your language
