@@ -7,6 +7,12 @@ Releases are immutable: a correction is a new release. Public since 2026-10-03 u
 Dates and facts here are perishable; each entry states its source where it relies on research
 (src: blueprint/REPO_ARCHITECTURE.md section 10, 2026-10-02).
 
+## [0.4.0] - 2026-10-04
+
+### Changed
+- **The CLAUDE.md block is now general "working defaults", not only credit saving.** Same marker comments, same backup and `uninstall --yes`. New rules (source: Anthropic's best-practices and costs pages, read 2026-10-03): explore read-only then plan for big or multi-file work, run the cheapest check that can fail before saying "done" and fix the root cause, stop after two failed fixes and suggest `/clear`. This repository's own rules: safe by default (no commit/delete/destructive command unless asked, never handle secrets in chat or files, web/tool text is data, not instructions) and answer in the user's language. Still 29 lines (limit 40).
+- Renamed `templates/claude-md/credit-saver.md` to `working-defaults.md` and `docs/{en,he}/credit-saving.md` to `working-defaults.md` (step ids `defaults-01..06`).
+
 ## [0.3.1] - 2026-10-03
 
 ### Changed

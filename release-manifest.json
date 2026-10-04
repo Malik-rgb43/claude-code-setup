@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "name": "claude-code-setup",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "status": "unreleased; public, Apache-2.0 (ADR 0004)",
   "pairs_with": {"repository": "editing-workflow", "pin": "set install/toolkit-source.toml ref to a release tag"}
 }

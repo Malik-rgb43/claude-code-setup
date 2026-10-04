@@ -10,7 +10,7 @@
 ## What is set up, and what is downloaded
 | # | What | What it does for you | Downloaded | Changed on your computer |
 |---|---|---|---|---|
-| 1 | **Credit-saving rules** | a short block of rules in `~/.claude/CLAUDE.md` so Claude Code spends fewer credits ([why each rule](credit-saving.md)) | nothing | one marked block in `~/.claude/CLAUDE.md`; a backup of the file is saved first; your own text is never touched |
+| 1 | **Working defaults** | a short block of general rules in `~/.claude/CLAUDE.md`: smaller context (fewer credits), a real check before "done", safe defaults ([why each rule](working-defaults.md)) | nothing | one marked block in `~/.claude/CLAUDE.md`; a backup of the file is saved first; your own text is never touched |
 | 2 | **Playwright MCP** | lets Claude Code open and look at web pages in an isolated browser without a window | the package `@playwright/mcp@0.0.83` from npm on first use; a Chromium browser may be downloaded at first use (size not measured) | one MCP server called `playwright` for your user |
 | 3 | **Superpowers plugin** | a set of skills for planning, debugging and reviewing | the plugin files from Anthropic's official marketplace on GitHub | the official marketplace is added if it is missing, then the plugin is installed for your user; it loads the next time Claude Code starts |
 Cost: none. Undo: `python install/setup.py uninstall --yes` removes exactly what was added.

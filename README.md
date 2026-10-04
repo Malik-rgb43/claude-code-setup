@@ -4,7 +4,7 @@ This repository prepares **Claude Code itself**, in three small steps. It is not
 
 | Step | What | Downloads | Changes on your computer |
 |---|---|---|---|
-| 1 | **Credit-saving rules** (`templates/claude-md/credit-saver.md`) | nothing | one marked block in `~/.claude/CLAUDE.md`, backed up first, removable |
+| 1 | **Working defaults** (`templates/claude-md/working-defaults.md`): general rules for every Claude Code session - smaller context, verify before "done", safe by default | nothing | one marked block in `~/.claude/CLAUDE.md`, backed up first, removable |
 | 2 | **Playwright MCP** | `@playwright/mcp@0.0.83` from npm on first use (and possibly a Chromium browser) | one MCP server `playwright` for your user |
 | 3 | **Superpowers plugin** | plugin files from Anthropic's official marketplace on GitHub | the plugin, installed for your user |
 
@@ -17,13 +17,13 @@ Then paste the link of the editing repository and say "install this" again: that
 | Path | What |
 |---|---|
 | `install/setup.py` | the installer (Python standard library only): `plan`, `apply --yes`, `verify`, `status`, `uninstall --yes` |
-| `templates/claude-md/credit-saver.md` | the credit-saving block |
+| `templates/claude-md/working-defaults.md` | the working-defaults block |
 | `INSTALL.md`, `AGENTS.md` | the agent runbook and the rules |
-| `docs/en`, `docs/he` | install (what is downloaded, what you answer), credit-saving rules explained, uninstall, troubleshooting |
+| `docs/en`, `docs/he` | install (what is downloaded, what you answer), working defaults explained, uninstall, troubleshooting |
 | `docs/decisions/` | ADR 0005 (who owns what), 0004 (public, Apache-2.0) |
 | `scripts/`, `tests/unit/` | the repository's own gates and 22 unit tests (no real `claude` call) |
 
 ## Honest status (2026-10-03)
 * Covered by mocked unit tests and CI on Windows, macOS and Ubuntu. **Not** run on a clean student computer yet.
-* The saving from the credit-saving rules is **not measured**; the rules follow Anthropic's cost guidance (https://code.claude.com/docs/en/costs). Measure with `/usage`.
+* Neither the saving nor the quality gain of the working defaults is **measured**; the rules follow Anthropic's cost and best-practices pages (https://code.claude.com/docs/en/costs, https://code.claude.com/docs/en/best-practices). Measure with `/usage`.
 * Licence: Apache-2.0 (see `LICENSE`, `NOTICE`). Third-party software (Playwright MCP, Superpowers, Claude Code) is downloaded, never bundled; their own licences apply.

@@ -3,7 +3,7 @@
   "tool": "scripts/gen_bom.py",
   "status": "PASS",
   "file_count": 41,
-  "total_bytes": 228620,
+  "total_bytes": 235784,
   "by_origin": {
     "owner": 41
   },
@@ -59,8 +59,8 @@
     },
     {
       "path": "AGENTS.md",
-      "size": 2307,
-      "sha256": "870705d5e649af55d1fad59103c38edf67abd31a8e743d98f71b87a11519cc34",
+      "size": 2352,
+      "sha256": "e088f2984f9e4d31ff910585f6bc2f2e39c96c83321f82f4c345726926d78583",
       "class": "text",
       "origin": "owner",
       "licence": "Apache-2.0",
@@ -69,8 +69,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size": 4105,
-      "sha256": "7f9d4b8d4f411af0ecb81312c1ef0a9f859fe7977fc212191159f32fc29ad38a",
+      "size": 4963,
+      "sha256": "b8a5d071bff6515bb5fc1c6c2a4974d78c8f755bef84a36f67aee5e26964d5d2",
       "class": "text",
       "origin": "owner",
       "licence": "Apache-2.0",
@@ -89,8 +89,8 @@
     },
     {
       "path": "INSTALL.md",
-      "size": 10109,
-      "sha256": "d3242bd3dd75d74a677e16b8f56ddd29f23a4207be1e000c540b80c0953d42b4",
+      "size": 10263,
+      "sha256": "922b16c6780067eb98ee9f9b3dd9a964a5eeb1c17a59cff49d83462d531fe5f3",
       "class": "text",
       "origin": "owner",
       "licence": "Apache-2.0",
@@ -119,8 +119,8 @@
     },
     {
       "path": "README.md",
-      "size": 2541,
-      "sha256": "b5c4454ee20f2a3bb1366faa66bfd7239cf3a30eb5abb3ad459bd079b6dbd2b0",
+      "size": 2732,
+      "sha256": "64db2d9ac30f4f4c75b1533f0c19f84c8c466ab8aaa30e929f5f0d19203841b2",
       "class": "text",
       "origin": "owner",
       "licence": "Apache-2.0",
@@ -169,18 +169,8 @@
     },
     {
       "path": "docs/decisions/0005-repository-split-revised.md",
-      "size": 2718,
-      "sha256": "53839470e7638e6d3c0e566646dd352a69d4bb95bbd25447f2b2f93d7d594634",
-      "class": "text",
-      "origin": "owner",
-      "licence": "Apache-2.0",
-      "rule": 3,
-      "flags": []
-    },
-    {
-      "path": "docs/en/credit-saving.md",
-      "size": 2213,
-      "sha256": "af0c1950b1f7ce35f66710ed9af6930f6c609c07837adaeb1d15a0b6659a3f36",
+      "size": 2759,
+      "sha256": "71f6f7b1a2e430aa4d6ed65ecbe9cb6946dc3c350193a9701f74c53ffc8d4000",
       "class": "text",
       "origin": "owner",
       "licence": "Apache-2.0",
@@ -189,8 +179,8 @@
     },
     {
       "path": "docs/en/install.md",
-      "size": 4715,
-      "sha256": "1bd00641512e84c6d125099399cede16b3ea070c549225ed0d59281851221068",
+      "size": 4763,
+      "sha256": "81503c866d5de6e344d853213ae726c9234280673eedc7d0c34272025bbdd2fb",
       "class": "text",
       "origin": "owner",
       "licence": "Apache-2.0",
@@ -218,9 +208,9 @@
       "flags": []
     },
     {
-      "path": "docs/he/credit-saving.md",
-      "size": 2834,
-      "sha256": "23927b09be444f1dabac9058240cd583ebbfa76a0a09f390732adf7b33babeeb",
+      "path": "docs/en/working-defaults.md",
+      "size": 3946,
+      "sha256": "904cf9a3978b7885a596e536f6c3151aa042484c0b97064c8cbeb9c826ab498f",
       "class": "text",
       "origin": "owner",
       "licence": "Apache-2.0",
@@ -229,8 +219,8 @@
     },
     {
       "path": "docs/he/install.md",
-      "size": 6052,
-      "sha256": "8f4d4089edeae0b5f4da16ae2e4fef16875f57b225dfce07f4d412cfb6a2626e",
+      "size": 6135,
+      "sha256": "68cd529f14dbbf63ad46fab88a4430d7bb833e1cd28761ceafdccd070a1a0794",
       "class": "text",
       "origin": "owner",
       "licence": "Apache-2.0",
@@ -258,9 +248,19 @@
       "flags": []
     },
     {
+      "path": "docs/he/working-defaults.md",
+      "size": 5138,
+      "sha256": "b0bf86b804ea492c897b5da5f51bd21c9e6e9e22b437a3d3258a56f4cbb8f532",
+      "class": "text",
+      "origin": "owner",
+      "licence": "Apache-2.0",
+      "rule": 3,
+      "flags": []
+    },
+    {
       "path": "install/setup.py",
-      "size": 25103,
-      "sha256": "60b00a332798ed6adc4de31afa292ca12d6991c22ff661c7b64d49035ec1fd75",
+      "size": 25468,
+      "sha256": "40ebc2c2bb5b8fa286d485a8491a6d7a3a1841043d728230fe3cdc15b2ded1be",
       "class": "text",
       "origin": "owner",
       "licence": "Apache-2.0",
@@ -280,7 +280,7 @@
     {
       "path": "release-manifest.json",
       "size": 258,
-      "sha256": "4fd8544f20589b8b3ca7402ed06f02ef9f035a48dbfb9c3bbd6d2b5d48dfc8be",
+      "sha256": "0275ef454c4a6c8a1d9f40ce14e7be0cb754e6b0d447e8a379d09bd53305cb5f",
       "class": "text",
       "origin": "owner",
       "licence": "Apache-2.0",
@@ -408,9 +408,9 @@
       "flags": []
     },
     {
-      "path": "templates/claude-md/credit-saver.md",
-      "size": 2377,
-      "sha256": "22dc3e0f937fa9cbb863c906982c3b6694d9374e67f13ea8e5ed336fd470e451",
+      "path": "templates/claude-md/working-defaults.md",
+      "size": 3260,
+      "sha256": "e20b88cdae0d937abc75329db69f623d8478c851b2d37f3ea06660d6062dda30",
       "class": "text",
       "origin": "owner",
       "licence": "Apache-2.0",
@@ -419,8 +419,8 @@
     },
     {
       "path": "tests/unit/test_setup.py",
-      "size": 13675,
-      "sha256": "d56a9b3ecfd78d561c977a82973b3fe4bb53c8a375a5a524e7311ec339fc054b",
+      "size": 14134,
+      "sha256": "bbae7075a7f96f3539d2724dad30b29c088e98c7dfd57963eb119a5ba99990f7",
       "class": "text",
       "origin": "owner",
       "licence": "Apache-2.0",

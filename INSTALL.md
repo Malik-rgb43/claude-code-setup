@@ -1,6 +1,6 @@
 # INSTALL.md - runbook for the AI agent that received this link
 
-> You are Claude Code. A student pasted the link of this repository (`claude-code-setup`) and said something like "install this" / "תתקין את זה". This repository prepares **Claude Code itself**, nothing about video: (1) a credit-saving block in `~/.claude/CLAUDE.md`, (2) the Playwright MCP server, (3) the Superpowers plugin. Everything about editing (skills, HyperFrames, MCP servers for editing, paid providers) lives in the second repository, `editing-workflow`, which the student installs next.
+> You are Claude Code. A student pasted the link of this repository (`claude-code-setup`) and said something like "install this" / "תתקין את זה". This repository prepares **Claude Code itself**, nothing about video: (1) a working-defaults block in `~/.claude/CLAUDE.md`, (2) the Playwright MCP server, (3) the Superpowers plugin. Everything about editing (skills, HyperFrames, MCP servers for editing, paid providers) lives in the second repository, `editing-workflow`, which the student installs next.
 > This file is your complete, ordered, idempotent runbook. The installer is `install/setup.py` (Python standard library only). **You always tell the student, in plain words, what will be downloaded, what changes on their computer and whether they must answer anything, before you change anything.** The answer to the last one is: one yes, and they may skip any of the three.
 > Status (2026-10-03): the installer is covered by mocked unit tests (no real `claude` call in tests) and CI on Windows, macOS and Ubuntu. It has not been run on a clean student computer; if something behaves differently, say so and use [troubleshooting](docs/en/troubleshooting.md).
 
@@ -40,7 +40,7 @@ It changes nothing. It prints, for each of the three steps: **what it is, what i
 <!-- step: setup-04 -->
 ## setup-04 - Tell the student what happens, then ONE confirmation
 Say it in the student's language, in plain words (at most 12 lines), then ask:
-1. **Credit-saving rules in `~/.claude/CLAUDE.md`:** a short block of rules that make Claude Code spend fewer credits. Downloads nothing. Your own text in that file is untouched and a backup is saved first.
+1. **Working defaults in `~/.claude/CLAUDE.md`:** a short block of general rules for every project (smaller context so fewer credits, a real check before "done", safe defaults). Downloads nothing. Your own text in that file is untouched and a backup is saved first.
 2. **Playwright MCP:** lets Claude Code open and look at web pages in an isolated, windowless browser. Downloads the package `@playwright/mcp@0.0.83` from npm on first use, and possibly a Chromium browser (size not measured).
 3. **Superpowers plugin:** a set of skills for planning, debugging and reviewing. Downloaded from Anthropic's official plugin marketplace on GitHub.
 4. **Cost: none.** No account, key or payment. **You answer one question:** "Shall I set up all three, or skip some? (yes / skip <name>)". Undo anytime: `uninstall --yes`.
@@ -79,7 +79,7 @@ Read a secret - ask for one - edit `settings.json` or any file other than the ma
 ## Where things land
 | Item | Location | Why |
 |---|---|---|
-| Credit-saving block | `~/.claude/CLAUDE.md` between `<!-- avc-claude-code-setup:begin v1 -->` and `<!-- avc-claude-code-setup:end -->` | the user-level instruction file Claude Code reads in every project; text from `templates/claude-md/credit-saver.md` |
+| Working-defaults block | `~/.claude/CLAUDE.md` between `<!-- avc-claude-code-setup:begin v1 -->` and `<!-- avc-claude-code-setup:end -->` | the user-level instruction file Claude Code reads in every project; text from `templates/claude-md/working-defaults.md` |
 | Playwright MCP | user scope, server name `playwright` (`claude mcp add --scope user`) | available in every project; pinned to `@playwright/mcp@0.0.83`, isolated profile, headless |
 | Superpowers | user scope plugin `superpowers@claude-plugins-official` (`claude plugin install`) | from Anthropic's official marketplace (`anthropics/claude-plugins-official`) |
 | Manifest and backups | `~/.avc/claude-code-setup/manifest.json`, `~/.avc/claude-code-setup/backups/<UTC stamp>/CLAUDE.md` | exact uninstall |

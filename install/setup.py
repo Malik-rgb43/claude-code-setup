@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """claude-code-setup - prepares Claude Code for a student (Python stdlib only). Three things, nothing about video editing:
 
-  1. a credit-saving block in ~/.claude/CLAUDE.md (marked, backed up, removable)
+  1. a working-defaults block (context/credit saving, verification, safety) in ~/.claude/CLAUDE.md (marked, backed up, removable)
   2. the Playwright MCP server (pinned, isolated, headless)
   3. the Superpowers plugin (from Anthropic's official plugin marketplace)
 
@@ -25,10 +25,10 @@ from pathlib import Path
 from types import SimpleNamespace
 
 REPO = Path(__file__).resolve().parent.parent
-VERSION = "0.3.1"
+VERSION = "0.4.0"
 BLOCK_BEGIN = "<!-- avc-claude-code-setup:begin v1 -->"
 BLOCK_END = "<!-- avc-claude-code-setup:end -->"
-TEMPLATE = Path("templates") / "claude-md" / "credit-saver.md"
+TEMPLATE = Path("templates") / "claude-md" / "working-defaults.md"
 PLAYWRIGHT_PIN = "@playwright/mcp@0.0.83"  # verified on npm 2026-10-03; node >= 18
 MARKETPLACE_NAME = "claude-plugins-official"
 MARKETPLACE_SOURCE = "anthropics/claude-plugins-official"
@@ -46,7 +46,7 @@ MSG = {
         "confirm": "Ask the student ONE question: shall I go ahead with all three, or which of them to skip? Then run: python install/setup.py apply --yes",
         "next": "Next: when this is done, paste the editing toolkit link into Claude Code and say \"install this\": " + EDITING_REPO_URL,
         "s_new": "will be added", "s_update": "will be updated", "s_present": "already there", "s_skip": "skipped by you", "s_blocked": "blocked",
-        "claude_md.what": "A short block of rules in ~/.claude/CLAUDE.md that makes Claude Code spend fewer credits: small context, targeted reads, no unnecessary agents or plans.",
+        "claude_md.what": "A short block of general rules in ~/.claude/CLAUDE.md for every project: small context and targeted reads (fewer credits), explore-plan-build for big work, a real check before saying done, and safe defaults (no commit/delete/secrets unless you ask; answers in your language).",
         "claude_md.downloads": "Nothing.",
         "claude_md.changes": "Adds one marked block to ~/.claude/CLAUDE.md (a backup of the file is saved first). Your own text in that file is never touched.",
         "playwright.what": "The Playwright MCP server: a browser Claude Code can drive to look at pages (isolated and headless, version pinned).",
@@ -66,7 +66,7 @@ MSG = {
         "confirm": "שואלים את התלמיד שאלה אחת: להמשיך עם שלושתם, או מה לדלג? ואז מריצים: python install/setup.py apply --yes",
         "next": "השלב הבא: כשזה נגמר, מדביקים ב-Claude Code את הלינק של ארגז הכלים לעריכה ואומרים \"תתקין את זה\": " + EDITING_REPO_URL,
         "s_new": "יתווסף", "s_update": "יתעדכן", "s_present": "כבר קיים", "s_skip": "דילגת", "s_blocked": "חסום",
-        "claude_md.what": "בלוק קצר של כללים בקובץ ~/.claude/CLAUDE.md שגורם ל-Claude Code לבזבז פחות קרדיטים: הקשר קטן, קריאות ממוקדות, בלי סוכנים ותוכניות מיותרים.",
+        "claude_md.what": "בלוק קצר של כללים כלליים בקובץ ~/.claude/CLAUDE.md לכל פרויקט: הקשר קטן וקריאות ממוקדות (פחות קרדיטים), חקירה-תוכנית-בנייה לעבודה גדולה, בדיקה אמיתית לפני \"סיימתי\", וברירות מחדל בטוחות (בלי commit/מחיקה/סודות אלא אם ביקשת; תשובות בשפה שלך).",
         "claude_md.downloads": "כלום.",
         "claude_md.changes": "מוסיף בלוק מסומן אחד ל-~/.claude/CLAUDE.md (קודם נשמר גיבוי של הקובץ). הטקסט שלך בקובץ הזה אף פעם לא נוגעים בו.",
         "playwright.what": "שרת Playwright MCP: דפדפן ש-Claude Code יכול להפעיל כדי לראות דפים (מבודד, בלי חלון, בגרסה נעוצה).",
@@ -431,7 +431,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--yes", action="store_true", help="the student's single confirmation was given")
     p.add_argument("--lang", choices=["en", "he"], default="en")
     p.add_argument("--json", action="store_true", help="machine-readable output")
-    p.add_argument("--skip-claude-md", action="store_true", help="do not add the credit-saving block")
+    p.add_argument("--skip-claude-md", action="store_true", help="do not add the working-defaults block")
     p.add_argument("--skip-playwright", action="store_true", help="do not register the Playwright MCP server")
     p.add_argument("--skip-superpowers", action="store_true", help="do not install the Superpowers plugin")
     p.add_argument("--claude-dir", help="Claude Code user folder. Default ~/.claude")

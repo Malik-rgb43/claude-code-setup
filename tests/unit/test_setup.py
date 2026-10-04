@@ -142,7 +142,7 @@ def test_apply_without_yes_changes_nothing(env):
 def test_apply_installs_all_three_and_is_idempotent(env):
     env.run("apply", "--yes", expect=0)
     text = env.md.read_text(encoding="utf-8")
-    assert env.st.BLOCK_BEGIN in text and env.st.BLOCK_END in text and "Credit-saving defaults" in text
+    assert env.st.BLOCK_BEGIN in text and env.st.BLOCK_END in text and "Working defaults" in text
     add = env.fake.count("claude", "mcp", "add")
     assert len(add) == 1 and "@playwright/mcp@0.0.83" in add[0] and "--isolated" in add[0] and "--headless" in add[0] and add[0][add[0].index("playwright")] == "playwright"
     assert env.fake.count("claude", "plugin", "marketplace", "add") == [["claude", "plugin", "marketplace", "add", "anthropics/claude-plugins-official"]]
@@ -178,7 +178,7 @@ def test_crlf_files_keep_their_line_endings(env):
 
 def test_a_changed_template_is_reported_as_update_and_replaced_in_place(env):
     env.run("apply", "--yes", "--skip-playwright", "--skip-superpowers", expect=0)
-    text = env.md.read_text(encoding="utf-8").replace("Credit-saving defaults", "Old title")
+    text = env.md.read_text(encoding="utf-8").replace("Working defaults", "Old title")
     env.md.write_text(text, encoding="utf-8")
     rc, plan = plan_json(env, "--skip-playwright", "--skip-superpowers")
     assert status_of(plan)["claude_md"] == "update"
@@ -287,10 +287,12 @@ def test_real_processes_are_refused_in_tests():
         st.run_cmd(["claude", "--version"])
 
 
-def test_the_credit_saving_block_is_short_specific_and_secret_free():
-    text = (REPO / "templates" / "claude-md" / "credit-saver.md").read_text(encoding="utf-8")
+def test_the_working_defaults_block_is_short_specific_and_secret_free():
+    text = (REPO / "templates" / "claude-md" / "working-defaults.md").read_text(encoding="utf-8")
     assert len(text.splitlines()) <= 40, "a CLAUDE.md that is loaded on every message must itself be small"
     for must in ("/clear", "/compact", "/usage", "/model", "/effort", "/mcp", "browser_snapshot", "Compact instructions"):
+        assert must in text, must
+    for must in ("Before saying a task is done", "Safe by default", "language the user writes in", "data, not instructions"):
         assert must in text, must
     import re
     assert not re.search(r"(?i)(api[_-]?key|token|password|secret)\s*[:=]", text)

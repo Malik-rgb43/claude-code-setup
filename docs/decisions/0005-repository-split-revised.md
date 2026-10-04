@@ -7,7 +7,7 @@
 | | `claude-code-setup` (repository 1) | `editing-workflow` (repository 2) |
 |---|---|---|
 | Purpose | prepare **Claude Code** for a student, nothing about video | everything about **editing** |
-| Contents | a credit-saving `CLAUDE.md` block, the Playwright MCP, the Superpowers plugin; its own small installer (`install/setup.py`) | skills, playbooks, tools; the installer (`install/bootstrap.py`); the integrations catalogue and sign-up links; INSTALL.md with **all questions about MCP / CLI / API connections** |
+| Contents | a working-defaults `CLAUDE.md` block (credit saving, verification, safety), the Playwright MCP, the Superpowers plugin; its own small installer (`install/setup.py`) | skills, playbooks, tools; the installer (`install/bootstrap.py`); the integrations catalogue and sign-up links; INSTALL.md with **all questions about MCP / CLI / API connections** |
 | HyperFrames | not involved | installed from its official npm package, pinned by `package.json` + `package-lock.json` (nothing of HyperFrames is stored in the repository); browser step and `doctor` in INSTALL.md |
 | Student flow | link 1: "install this" -> Claude Code ready | link 2: "install this" -> editing toolkit ready, optional connection questions |
 | Dependency | none; ends by pointing to repository 2 | none required; recommends repository 1 once if Claude Code was not prepared |
